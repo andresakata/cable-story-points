@@ -1,0 +1,1 @@
+require("channels/planning_room")
