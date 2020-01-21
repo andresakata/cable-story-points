@@ -1,0 +1,7 @@
+<%= form_with(url: '/login', method: 'post') do %>
+  <%= label_tag(:user, 'User:') %>
+  <%= text_field_tag(:user) %>
+  <%= label_tag(:room, 'Room:') %>
+  <%= text_field_tag(:room) %>
+  <%= submit_tag('Login') %>
+<% end %>
