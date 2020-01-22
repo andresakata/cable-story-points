@@ -4,7 +4,6 @@ class PlanningRoomController < ApplicationController
   before_action :require_login
 
   def index
-    @users = ActionCable.server.connections.collect(&:current_user).uniq
   end
 
   def set_points
