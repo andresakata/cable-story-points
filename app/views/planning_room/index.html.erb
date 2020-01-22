@@ -15,6 +15,12 @@ Planning Room
   </tbody>
 </table>
 
+<%= form_with(url: '/set_points', method: 'post', remote: true) do %>
+  <%= label_tag(:user, 'Points:') %>
+  <%= text_field_tag(:points) %>
+  <%= submit_tag('Send') %>
+<% end %>
+
 <script>
   var room = <%= cookies[:room] %>
 </script>

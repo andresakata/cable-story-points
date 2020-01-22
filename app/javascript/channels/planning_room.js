@@ -1,3 +1,13 @@
 import consumer from "./consumer"
 
-consumer.subscriptions.create({ channel: "PlanningRoomChannel", room: room })
+consumer.subscriptions.create(
+  {
+    channel: "PlanningRoomChannel",
+    room: room
+  },
+  {
+    received(data) {
+      console.log(data);
+    }
+  }
+);
