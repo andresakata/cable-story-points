@@ -21,7 +21,3 @@ development:
 test:
   <<: *default
   database: cable_story_points_test
-
-production:
-  <<: *default
-  database: cable_story_points_production
